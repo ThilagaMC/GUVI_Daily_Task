@@ -1,0 +1,26 @@
+Document Object:
+
+- The document object represents the HTML document loaded in the browser window.
+- It represents the document loaded inside the window or browser.	
+- It provides properties and methods to interact with the content of the document, 
+  such as accessing elements, modifying the structure and content, or handling 
+  events related to the document.
+- It is the root element of the document object model.
+- It is an object of window.	
+- We can not access windows objects properties inside the document.	
+- logically: document:{ properties}
+- Example: document.title will return the title of the document	
+
+Window Object :
+
+- The window object represents the browser window or tab that contains the HTML document
+- It represents the browser window in which you are seeing the content.
+- It serves as the global object in the browser's JavaScript environment, 
+  providing access to various browser-related functionalities and properties
+- The window object is also the global scope for JavaScript code running in the browser, 
+  meaning that variables and functions declared without explicit 
+  scoping are attached to the window object
+- It is an object of the browser.
+- We can access document object properties inside the window.
+- logically: window:{ document:{properties} }
+- Example: window.document.title will return the title of the document.
