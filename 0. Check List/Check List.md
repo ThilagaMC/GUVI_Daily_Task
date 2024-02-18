@@ -1,7 +1,7 @@
 [x] 1. Introduction to Web, Browser Wars 
 [x] 2. DOM tree VS CSSOM tree 
-[] 3. Intro to Browser internals(HTML parser, CSS parser)
-[] 4. JavaScript V8 engine internals 
+[x] 3. Intro to Browser internals(HTML parser, CSS parser)
+[X] 4. JavaScript V8 engine internals 
 [x] 5. Intro to IP, MAC address, Ports
 [x] 6. HTTP Methods
 [] 7. How the Server looks at the URL
