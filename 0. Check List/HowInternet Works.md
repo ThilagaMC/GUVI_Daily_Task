@@ -2,7 +2,9 @@ How Internet works:
 
 
 Step 1: User provided the input in the browser for example "google.com".
+
 Step 2: google.com checks for the IP address, initially in the Local host.
+
 Step 3: If the IP address is not in the local host then the browser will send the IP address to the 
 DNS server.
 Step 4: The DNS server helps to get the particular IP address of the domain name.
