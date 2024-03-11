@@ -13,7 +13,7 @@ class Movie {
             }
         }
         return pgMovies();
-    
+
     }
 }
 const casinoRoyale = new Movie("Casino Royale", "Eon Productions", "PG-13");
