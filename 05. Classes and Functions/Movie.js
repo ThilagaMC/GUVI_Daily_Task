@@ -17,5 +17,5 @@ class Movie {
     }
 }
 const casinoRoyale = new Movie("Casino Royale", "Eon Productions", "PG-13");
-console.log(casinoRoyale);
+
 
