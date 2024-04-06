@@ -1,0 +1,9 @@
+.Pagination-button
+{
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
