@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagination Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="content"></div>
+  <div id="pagination"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<style>
+    .pagination-button {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.pagination-button.active {
+  background-color: #ddd;
+}
+
+</style>
+
+
+<script>
+const itemsPerPage = 5;
+const contentDiv = document.getElementById('content');
+const paginationDiv = document.getElementById('pagination');
+
+const items = []; // This would be your actual data
+
+// Create some sample data for demonstration
+for (let i = 1; i <= 20; i++) {
+  items.push(`Item ${i}`);
+}
+
+function displayItems(pageNumber) {
+  contentDiv.innerHTML = ''; // Clear previous items
+
+  const startIndex = (pageNumber - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const displayedItems = items.slice(startIndex, endIndex);
+
+  displayedItems.forEach(item => {
+    const itemDiv = document.createElement('div');
+    itemDiv.textContent = item;
+    contentDiv.appendChild(itemDiv);
+  });
+}
+
+function createPaginationButtons() {
+  const numPages = Math.ceil(items.length / itemsPerPage);
+
+  for (let i = 1; i <= numPages; i++) {
+    const button = document.createElement('button');
+    button.textContent = i;
+    button.classList.add('pagination-button');
+    if (i === 1) {
+      button.classList.add('active');
+    }
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.pagination-button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      button.classList.add('active');
+      displayItems(i);
+    });
+    paginationDiv.appendChild(button);
+  }
+}
+
+createPaginationButtons();
+displayItems(1); // Display initial page
+
+</script>
