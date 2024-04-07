@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagination </title>
-</head>
-<body>
 
-    <div class="content"></div>
-    <div class="pagination"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagination </title>
+  <link rel="stylesheet" href="Pagination_Style.css">
+</head>
+
+<body>
+  <div class="pagination">
+    <button id="firstbtn" onclick="first()"> First</button>
+    <button id="backBtn" onclick="prev()">< Previous</button>
+        <button onclick="pageone()">1</button>
+        <button onclick="pagetwo()">2</button>
+        <button onclick="pagethree()">3</button>
+        <button onclick="pagefour()">4</button>
+        <button onclick="pagefive()">5</button>
+        <button onclick="pagesix()">6</button>
+        <button onclick="pageseven()">7</button>
+        <button onclick="pageeight()">8</button>
+        <button onclick="pagenine()">9</button>
+        <button onclick="pageten()">10</button>
+        <button onclick="next()">Next ></button>
+
+        <div id="user-list">
+
+        </div>
+
+
+        <p id="content"></p>
+        <p id="content1"></p>
+
+  </div>
+
+  <script src="Pagination_Script.js"></script>
 
 </body>
+
 </html>
