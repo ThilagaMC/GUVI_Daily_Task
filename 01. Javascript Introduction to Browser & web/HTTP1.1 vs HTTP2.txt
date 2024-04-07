@@ -1,0 +1,20 @@
+HTTP/1.1:
+
+ ->It uses a single connection per request.
+ ->Only one request can be sent on a connection at a time.
+ ->where one slow request can delay subsequent requests.
+ ->Headers are sent in plain text with each request and response, 
+ leading to redundant data being transmitted with every request.
+ ->It uses plain text for communication between clients and servers.
+ ->It doesn't have built-in support for resource prioritization,
+  which can lead to suboptimal performance in certain situations.
+ 
+  HTTP/2:
+  ->It supports multiplexing, allowing multiple requests and responses 
+    to be sent and received in parallel over a single connection.
+  ->This significantly reduces latency and improves efficiency.
+  -> It uses header compression, which reduces overhead by compressing headers before transmission
+  ->It supports server push, allowing servers to push resources to clients before they are explicitly requested.
+  ->It uses a binary protocol, which is more efficient to parse and less error-prone compared to plain text.
+  ->It allows clients to prioritize resources, ensuring that more important resources are downloaded first, leading to improved performance and user experience.
+
